@@ -1,0 +1,1770 @@
+[DEBUG] 2023-10-09 17:15:30,543 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: demo.site
+Access denied for site demo.site
+[DEBUG] 2023-10-09 17:38:03,132 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[ERROR] 2023-10-09 17:39:07,440 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Exception in Enqueue Events for Site custom.site
+Traceback (most recent call last):
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/database/database.py", line 156, in sql
+    self._cursor.execute(query, values)
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/env/lib/python3.8/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/env/lib/python3.8/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/env/lib/python3.8/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/env/lib/python3.8/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/env/lib/python3.8/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/env/lib/python3.8/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/env/lib/python3.8/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/env/lib/python3.8/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1213, 'Deadlock found when trying to get lock; try restarting transaction')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py", line 84, in enqueue_events_for_site
+    enqueue_events(site=site, queued_jobs=queued_jobs)
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py", line 103, in enqueue_events
+    frappe.db.set_value('System Settings', 'System Settings',
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/database/database.py", line 665, in set_value
+    self.sql('''
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/database/database.py", line 191, in sql
+    raise frappe.QueryDeadlockError(e)
+frappe.exceptions.QueryDeadlockError: (1213, 'Deadlock found when trying to get lock; try restarting transaction')
+
+[DEBUG] 2023-10-09 17:40:07,540 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-09 17:41:07,631 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-09 17:42:07,716 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-09 17:43:07,802 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-09 17:44:07,909 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-09 17:45:07,999 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-09 17:46:08,091 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-09 17:47:08,180 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-09 17:48:08,281 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-09 17:49:08,372 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-09 17:50:08,467 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-09 17:51:08,560 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-09 17:52:08,659 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-09 17:53:08,746 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-09 17:54:08,836 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-09 17:55:08,925 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-09 17:56:09,025 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-09 17:57:09,119 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-09 17:58:09,210 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-09 17:59:09,300 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-09 18:00:09,401 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-09 18:01:09,491 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-09 18:02:09,580 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-09 18:03:09,669 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-09 18:04:09,762 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-09 18:05:09,840 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-09 18:06:09,927 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-09 18:07:10,005 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-09 18:08:10,092 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 07:47:44,068 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 07:48:44,168 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 07:49:44,267 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 07:50:44,356 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 07:54:05,619 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 07:55:05,708 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 07:56:05,816 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 07:57:05,907 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 07:58:06,000 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 07:59:06,088 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:00:06,198 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:01:06,289 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:02:06,373 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:03:06,462 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:04:06,558 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:05:06,649 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:06:06,737 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:07:06,832 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:08:06,951 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:09:07,047 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:10:07,133 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:11:07,231 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:12:07,327 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:13:07,415 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:14:07,505 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:15:07,594 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:16:07,696 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:17:07,783 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:18:07,874 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:19:07,961 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:20:08,063 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:21:08,152 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:22:08,242 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:23:08,327 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:24:08,417 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:25:08,497 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:26:08,586 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:27:08,669 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:28:08,765 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:29:08,851 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:30:08,943 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:31:09,037 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:32:09,139 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:33:09,228 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:34:09,305 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:35:09,381 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:36:09,484 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:37:09,571 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:38:09,661 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:39:09,755 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:40:09,855 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:41:09,933 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:42:10,027 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:43:10,114 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:44:10,206 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:45:10,293 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:46:10,379 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:47:10,472 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:48:10,569 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:49:10,655 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:50:10,742 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:51:10,831 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:52:10,927 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:53:11,015 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:54:11,100 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:55:11,193 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:56:11,293 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:57:11,378 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:58:11,467 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 08:59:11,559 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:00:11,674 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:01:11,767 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:02:11,860 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:03:11,954 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:04:12,047 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:05:12,136 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:06:12,223 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:07:12,311 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:08:12,411 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:09:12,499 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:10:12,585 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:11:12,677 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:12:12,778 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:13:12,864 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:14:12,952 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:15:13,049 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:16:13,153 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:17:13,241 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:18:13,330 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:19:13,415 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:20:13,511 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:21:13,602 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:22:13,692 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:23:13,784 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:24:13,891 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:25:13,978 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:26:14,065 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:27:14,153 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:28:14,316 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:29:14,400 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:30:14,492 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:31:14,583 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:32:14,708 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:33:14,797 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:34:14,880 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:35:14,969 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:36:15,069 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:37:15,160 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:38:15,256 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:39:15,344 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:40:15,444 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:41:15,534 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:42:15,629 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:43:15,715 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:44:15,825 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:45:15,914 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:46:16,011 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:47:16,106 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:48:16,211 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:49:16,304 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:50:16,401 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:51:16,492 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:52:16,599 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:53:16,691 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:54:16,781 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:55:16,874 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:56:16,981 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:57:17,067 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:58:17,162 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 09:59:17,251 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:00:17,364 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:01:17,481 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:02:17,580 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:03:17,671 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:04:17,765 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:05:17,860 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:06:17,955 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:07:55,647 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:08:55,758 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:09:55,846 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:10:55,939 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:11:56,019 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:12:56,121 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:13:56,204 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:14:56,293 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:15:56,379 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:16:56,480 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:17:56,570 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:18:56,652 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:19:56,736 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:20:56,837 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:21:56,933 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:22:57,022 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:23:57,112 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:24:57,214 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:25:57,311 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:26:57,406 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:27:57,500 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:28:57,598 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:29:57,685 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:30:57,774 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:31:57,868 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:32:57,975 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:34:51,577 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:35:51,679 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:36:51,788 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:37:51,877 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:38:51,955 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:39:52,084 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:40:52,183 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:41:52,275 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:42:52,363 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:43:52,442 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:44:52,546 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:45:52,630 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:46:52,714 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:47:52,802 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:48:52,906 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:49:52,991 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:50:53,077 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:51:53,161 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:52:53,281 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:53:53,406 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:54:53,487 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:55:53,563 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:56:53,645 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:57:53,739 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:58:53,820 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 10:59:53,904 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 11:00:53,999 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 11:01:54,073 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 11:02:54,161 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 11:03:54,244 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 11:04:54,383 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 11:05:54,460 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 11:06:54,533 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 11:07:54,605 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 11:08:54,697 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 13:56:02,510 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 13:57:02,592 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 13:58:02,680 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 13:59:02,766 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:00:02,905 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:01:03,020 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:02:03,161 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:03:03,259 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:04:03,368 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:05:03,453 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:06:03,533 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:07:03,622 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:08:03,724 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:09:03,816 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:10:03,909 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:11:04,002 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:12:04,103 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:13:04,190 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:14:04,279 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:15:04,424 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:16:04,521 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:17:04,607 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:18:04,698 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:19:04,790 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:20:04,892 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:21:04,983 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:22:05,072 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:23:05,163 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:24:05,266 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:25:05,382 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:26:05,458 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:27:05,548 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:28:06,188 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:29:06,277 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:30:06,360 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:31:06,448 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:32:06,546 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:33:06,631 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:34:06,707 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:35:06,794 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:36:06,895 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:37:06,990 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:38:07,084 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:39:07,168 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:40:07,265 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:41:07,349 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:42:07,437 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:43:07,520 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:44:07,617 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:45:07,697 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:46:07,789 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:47:07,877 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:48:07,976 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:49:08,065 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:50:08,155 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:51:08,249 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:52:08,350 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:53:08,437 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:54:08,528 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:55:08,617 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:56:08,726 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:57:08,816 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:58:08,910 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 14:59:09,002 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:00:09,117 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:01:09,209 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:02:09,285 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:03:09,372 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:04:09,480 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:05:09,573 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:06:09,657 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:07:09,741 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:08:09,836 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:09:09,923 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:10:10,007 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:11:10,094 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:12:10,190 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:13:10,270 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:14:10,351 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:15:10,435 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:16:10,539 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:17:10,630 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:18:10,717 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:19:10,808 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:20:10,910 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:21:10,996 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:22:11,087 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:23:11,181 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:24:11,280 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:25:11,390 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:26:11,473 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:27:11,562 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:28:11,667 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:29:11,752 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:30:11,840 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:31:11,926 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:32:12,022 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:33:12,109 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:34:12,198 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:35:12,291 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:36:12,399 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:37:12,492 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:38:12,581 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:39:12,677 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:40:12,784 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:41:12,864 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:42:12,954 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:43:13,044 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:44:13,142 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[ERROR] 2023-10-10 15:45:08,737 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/app.py:
+Site: custom.site
+Form Dict: {
+ "cmd": "frappe.desk.treeview.add_node",
+ "doctype": "tree doctype",
+ "is_group": "0",
+ "is_root": "true",
+ "parent": "27370f8793"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/__init__.py", line 1105, in call
+    return fn(*args, **newargs)
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/desk/treeview.py", line 57, in add_node
+    args = make_tree_args(**frappe.form_dict)
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/desk/treeview.py", line 73, in make_tree_args
+    name_field: kwarg[name_field],
+KeyError: 'tree_doctype_name'
+[ERROR] 2023-10-10 15:45:08,797 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2023-10-10 15:45:08.738402-127.0.0.1-9b4
+[DEBUG] 2023-10-10 15:45:13,232 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[ERROR] 2023-10-10 15:45:16,789 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/app.py:
+Site: custom.site
+Form Dict: {
+ "cmd": "frappe.desk.treeview.add_node",
+ "doctype": "tree doctype",
+ "is_group": "1",
+ "is_root": "true",
+ "parent": "27370f8793"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/__init__.py", line 1105, in call
+    return fn(*args, **newargs)
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/desk/treeview.py", line 57, in add_node
+    args = make_tree_args(**frappe.form_dict)
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/desk/treeview.py", line 73, in make_tree_args
+    name_field: kwarg[name_field],
+KeyError: 'tree_doctype_name'
+[ERROR] 2023-10-10 15:45:16,792 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2023-10-10 15:45:16.789352-127.0.0.1-d41
+[DEBUG] 2023-10-10 15:46:13,323 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:47:13,417 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:48:13,522 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:49:13,608 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[ERROR] 2023-10-10 15:49:45,579 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/app.py:
+Site: custom.site
+Form Dict: {
+ "cmd": "frappe.desk.treeview.add_node",
+ "doctype": "tree doctype",
+ "is_group": "1",
+ "is_root": "true",
+ "parent": "27370f8793"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/__init__.py", line 1105, in call
+    return fn(*args, **newargs)
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/desk/treeview.py", line 57, in add_node
+    args = make_tree_args(**frappe.form_dict)
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/desk/treeview.py", line 73, in make_tree_args
+    name_field: kwarg[name_field],
+KeyError: 'tree_doctype_name'
+[ERROR] 2023-10-10 15:49:45,582 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2023-10-10 15:49:45.579734-127.0.0.1-f54
+[DEBUG] 2023-10-10 15:50:13,696 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:51:13,790 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:52:13,883 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:53:13,964 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[ERROR] 2023-10-10 15:53:23,339 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/app.py:
+Site: custom.site
+Form Dict: {
+ "cmd": "frappe.desk.treeview.add_node",
+ "doctype": "tree1 doctype",
+ "is_group": "1",
+ "is_root": "true",
+ "parent": "parent tree"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/__init__.py", line 1105, in call
+    return fn(*args, **newargs)
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/desk/treeview.py", line 57, in add_node
+    args = make_tree_args(**frappe.form_dict)
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/desk/treeview.py", line 73, in make_tree_args
+    name_field: kwarg[name_field],
+KeyError: 'tree1_doctype_name'
+[ERROR] 2023-10-10 15:53:23,343 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2023-10-10 15:53:23.340610-127.0.0.1-626
+[DEBUG] 2023-10-10 15:54:14,053 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:55:14,153 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[ERROR] 2023-10-10 15:55:38,623 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/app.py:
+Site: custom.site
+Form Dict: {
+ "cmd": "frappe.desk.treeview.add_node",
+ "doctype": "Tree",
+ "is_group": "1",
+ "is_root": "true",
+ "parent": "Parent"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/__init__.py", line 1105, in call
+    return fn(*args, **newargs)
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/desk/treeview.py", line 57, in add_node
+    args = make_tree_args(**frappe.form_dict)
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/desk/treeview.py", line 73, in make_tree_args
+    name_field: kwarg[name_field],
+KeyError: 'tree_name'
+[ERROR] 2023-10-10 15:55:38,626 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2023-10-10 15:55:38.623916-127.0.0.1-134
+[DEBUG] 2023-10-10 15:56:14,251 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:57:14,354 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:58:14,447 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 15:59:14,533 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[ERROR] 2023-10-10 15:59:40,023 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/app.py:
+Site: custom.site
+Form Dict: {
+ "cmd": "frappe.desk.treeview.add_node",
+ "doctype": "Drakht",
+ "is_group": "1",
+ "is_root": "true",
+ "parent": "621c5c78dd"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/__init__.py", line 1105, in call
+    return fn(*args, **newargs)
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/desk/treeview.py", line 57, in add_node
+    args = make_tree_args(**frappe.form_dict)
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/desk/treeview.py", line 73, in make_tree_args
+    name_field: kwarg[name_field],
+KeyError: 'drakht_name'
+[ERROR] 2023-10-10 15:59:40,026 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2023-10-10 15:59:40.023859-127.0.0.1-5c9
+[DEBUG] 2023-10-10 16:00:14,642 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[ERROR] 2023-10-10 16:01:03,415 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/app.py:
+Site: custom.site
+Form Dict: {
+ "cmd": "frappe.desk.treeview.add_node",
+ "doctype": "Drakht",
+ "is_group": "0",
+ "is_root": "true",
+ "parent": "621c5c78dd"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/__init__.py", line 1105, in call
+    return fn(*args, **newargs)
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/desk/treeview.py", line 57, in add_node
+    args = make_tree_args(**frappe.form_dict)
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/desk/treeview.py", line 73, in make_tree_args
+    name_field: kwarg[name_field],
+KeyError: 'drakht_name'
+[ERROR] 2023-10-10 16:01:03,417 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2023-10-10 16:01:03.415998-127.0.0.1-9c5
+[DEBUG] 2023-10-10 16:01:14,735 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[ERROR] 2023-10-10 16:01:20,202 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/app.py:
+Site: custom.site
+Form Dict: {
+ "cmd": "frappe.desk.treeview.add_node",
+ "doctype": "Drakht",
+ "is_group": "1",
+ "is_root": "true",
+ "parent": "621c5c78dd"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/__init__.py", line 1105, in call
+    return fn(*args, **newargs)
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/desk/treeview.py", line 57, in add_node
+    args = make_tree_args(**frappe.form_dict)
+  File "/home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/desk/treeview.py", line 73, in make_tree_args
+    name_field: kwarg[name_field],
+KeyError: 'drakht_name'
+[ERROR] 2023-10-10 16:01:20,206 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2023-10-10 16:01:20.202739-127.0.0.1-e02
+[DEBUG] 2023-10-10 16:02:14,827 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 16:03:14,915 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 16:04:15,011 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 16:05:15,103 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 16:06:15,196 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 16:07:15,285 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 16:08:15,389 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 16:09:15,480 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 16:10:15,567 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 16:11:15,654 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 16:12:15,754 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 16:13:15,853 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 16:14:15,936 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 16:15:16,023 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 16:16:16,127 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 16:17:16,216 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 16:18:16,305 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 16:19:16,392 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 16:20:16,485 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 16:21:16,570 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-10 16:22:16,666 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 09:24:34,354 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 09:25:34,699 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 09:26:34,787 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 09:27:34,869 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 09:28:34,976 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 09:29:35,072 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 09:30:35,165 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 09:31:35,264 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 09:32:35,364 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 09:33:35,456 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 09:34:35,550 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 09:35:35,646 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 09:36:35,744 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 09:37:35,831 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 09:38:35,918 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 09:39:36,015 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 09:40:36,118 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 09:41:36,204 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 09:42:36,295 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 09:43:36,383 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 09:44:36,480 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 09:45:36,570 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 09:46:36,655 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 09:47:36,745 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 09:48:36,846 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 09:49:36,935 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 09:50:37,026 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 09:51:37,116 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 09:52:37,219 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 09:53:37,313 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 09:54:52,501 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 09:55:52,589 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 09:56:52,684 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 09:57:52,777 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 09:58:52,865 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 09:59:52,956 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:00:53,065 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:01:53,157 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:02:53,752 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:03:53,839 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:04:53,937 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:05:54,026 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:06:54,127 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:07:54,226 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:08:54,340 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:09:54,425 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:10:54,514 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:11:54,601 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:12:54,706 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:13:54,804 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:14:54,899 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:15:54,992 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:16:55,096 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:17:55,190 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:18:55,279 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:19:55,372 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:20:55,476 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:21:55,560 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:22:55,648 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:23:55,732 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:24:55,843 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:25:55,935 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:26:56,027 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:27:56,120 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:28:56,222 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:29:56,318 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:30:56,412 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:31:56,514 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:32:56,618 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:33:56,694 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:34:56,785 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:35:56,871 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:36:56,968 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:37:57,056 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:38:57,144 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:39:57,230 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:40:57,323 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:41:57,408 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:42:57,488 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:43:57,575 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:44:57,671 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:45:57,759 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:46:57,848 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:47:57,937 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:48:58,039 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:49:58,130 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:50:58,219 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:51:58,308 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:52:58,412 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:53:58,496 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:54:58,582 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:55:58,669 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:56:58,778 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:57:58,865 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:58:58,954 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 10:59:59,049 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 11:00:59,168 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 11:01:59,257 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 11:02:59,371 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 11:03:59,451 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 11:04:59,552 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 11:05:59,631 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 11:06:59,719 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 11:07:59,806 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 11:08:59,936 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 11:10:00,025 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 11:11:00,113 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 11:12:00,223 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 11:13:00,311 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 11:14:00,402 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 11:15:00,491 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 11:16:00,586 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 11:17:00,675 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 11:18:00,762 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 11:19:00,852 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 11:20:00,953 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 11:21:01,039 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 11:22:01,126 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 11:23:01,217 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 11:24:01,320 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 11:25:01,406 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 11:26:01,497 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 11:27:01,604 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 11:28:01,711 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 11:29:01,797 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 11:30:01,883 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
+[DEBUG] 2023-10-11 11:31:01,972 | /home/kaqeebkhan/Desktop/my_custom_erpnext/apps/frappe/frappe/utils/scheduler.py:
+Site: custom.site
+Queued events for site custom.site
